@@ -3,14 +3,14 @@
 @section('content')
 <div class="container">
                 @if (Auth::check())
-                        <h2>Tasks List</h2>
+                        <h2 style="color: purple;">Tasks List</h2>
                         <a href="/task" class="btn btn-primary">Add new Task</a>
                         <table class="table">
                             <thead><tr>
-                                <th colspan="2">Tasks</th>
+                                <th colspan="2" style="color: white;">Tasks</th>
                             </tr>
                         </thead>
-                        <tbody>@foreach($user->tasks as $task)
+                        <tbody style="color: white;">@foreach($user->tasks as $task)
                             <tr>
                                 <td>
                                     {{$task->description}}

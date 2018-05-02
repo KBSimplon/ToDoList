@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="container">
-	<h1>Edit the Task</h1>
+	<h1 style="color: purple;">Edit the Task</h1>
 
 <form method="POST" action="/task/{{ $task->id }}">
 
